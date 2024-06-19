@@ -1,6 +1,6 @@
 package com.alexpractice.alex.move;
 
-enum Player{
+public enum Player{
     White,
     Black
 }

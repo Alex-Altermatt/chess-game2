@@ -13,10 +13,10 @@ public class PositionTest {
     @Test
     public void createPositionObjectAndCheckRowValueShouldReturnTrue(){
         try {
-            Position newPosition= new Position(3,4);
+            Position newPosition= new Position("3a");
             assertEquals(newPosition.row,3);
         }
-        catch(Exception except) {
+        catch(IllegalArgumentException except) {
             assertTrue(false);
         }
     }
@@ -24,9 +24,9 @@ public class PositionTest {
     @Test
     public void createPositionWithInvalidValues(){
         try {
-            Position newPosition= new Position(9,4);
+            Position newPosition= new Position("9z");
         }
-        catch(Exception except) {
+        catch(IllegalArgumentException except) {
             assertTrue(true);
         }
 
@@ -35,11 +35,11 @@ public class PositionTest {
     @Test
     public void changeValuesAfterCreationShouldReturnTrue(){
         try {
-            Position newPosition= new Position(3,4);
-            newPosition.setPosition(5,7);
-            assertEquals(newPosition.row,5);
+            Position newPosition= new Position("3a");
+            newPosition.setPosition(new Position("4a"));
+            assertEquals(newPosition.row,4);
         }
-        catch(Exception except) {
+        catch(IllegalArgumentException except) {
             assertTrue(false);
         }
     }
@@ -47,10 +47,9 @@ public class PositionTest {
     @Test
     public void changeValueToInvalidParameterShouldReturnFalse(){
         try {
-            Position newPosition= new Position(3,4);
-            assertFalse(newPosition.setPosition(9,7));
+            Position newPosition= new Position("3a");
         }
-        catch(Exception except){
+        catch(IllegalArgumentException except){
             assertFalse(false);
         }
     }

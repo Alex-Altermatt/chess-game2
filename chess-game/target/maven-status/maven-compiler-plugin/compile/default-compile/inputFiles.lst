@@ -1,2 +1,7 @@
 /Users/alexanderaltermatt/summer-programming/chess/chess-game2/chess-game/src/main/java/com/alexpractice/alex/App.java
+/Users/alexanderaltermatt/summer-programming/chess/chess-game2/chess-game/src/main/java/com/alexpractice/alex/board/BoardState.java
+/Users/alexanderaltermatt/summer-programming/chess/chess-game2/chess-game/src/main/java/com/alexpractice/alex/piece/Piece.java
+/Users/alexanderaltermatt/summer-programming/chess/chess-game2/chess-game/src/main/java/com/alexpractice/alex/move/Move.java
+/Users/alexanderaltermatt/summer-programming/chess/chess-game2/chess-game/src/main/java/com/alexpractice/alex/piece/PieceType.java
 /Users/alexanderaltermatt/summer-programming/chess/chess-game2/chess-game/src/main/java/com/alexpractice/alex/move/Position.java
+/Users/alexanderaltermatt/summer-programming/chess/chess-game2/chess-game/src/main/java/com/alexpractice/alex/move/Player.java
