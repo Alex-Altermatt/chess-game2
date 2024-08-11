@@ -10,5 +10,6 @@ public class Piece {
         this.typeOfPiece=typeOfPiece;
         this.colorPlayer=colorPlayer;
     }
+    
 }
  
